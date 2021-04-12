@@ -1,0 +1,39 @@
+{
+    "name": "UltraX Assistant",
+    "description": "Jnl",
+    "logo": "https://telegra.ph/file/bc9ed71c462c8cb8cc02c.jpg",
+    "keywords": [
+        "Assitant",
+        "Telegram Bot",
+        "TeamUltraX"
+    ],
+    "website": "",
+    "repository": "https://github.com/ULTRA-OP/ULTRA-X/",
+    "success_url": "https://telegram.dog/Alain_Champion",
+    "env": {
+        "TG_BOT_TOKEN": {
+            "description": "You Telegram Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API Hash from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your API ID from my.telegram.org",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
