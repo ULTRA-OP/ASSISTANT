@@ -1,36 +1,25 @@
 {
-    "name": "Assistant",
-    "description": "A bot that can upload medias to telegra.ph",
-    "logo": "https://telegra.ph/file/bc9ed71c462c8cb8cc02c.jpg",
-    "keywords": [
-        "Telegra.ph",
-        "Madboy",
-        "Telegram Bot",
-        "Alain"
-    ],
-    "website": "",
-    "repository": "https://github.com/ULTRA-OP/ASSISTANT/",
-    "success_url": "https://telegram.dog/Alain_Champion",
-    "env": {
-        "TOKEN": {
-            "description": "You Telegram Bot Token from @BotFather",
-            "value": ""
-        },
-        "API_HASH": {
-            "description": "Your API Hash from my.telegram.org",
-            "value": ""
-        },
-        "API_ID": {
-            "description": "Your API ID from my.telegram.org",
-            "value": ""
-        }
+  "name": "ULTRA X ASSISTANT",
+  "description": "Open-Source ASSISTANT Bot for Telegram.",
+  "keywords": ["Telegram", "Ultra x", "assistant"],
+  "repository": "https://github.com/ULTRA-OP/ULTRA-X",
+  "stack": "container",
+  "env": {
+    "TOKEN": {
+      "description": "A bot token from @BotFather",
+      "required": true
     },
-
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ]
+    "API_ID": {
+      "description": "App ID from my.telegram.org/apps",
+      "required": true
+    },
+    "API_HASH": {
+      "description": "App hash from my.telegram.org/apps",
+      "required": true
+    },
+    "SUDO_USERS": {
+      "description": "List of user IDs counted as admin everywhere (separated by space).",
+      "required": true
+    },
+  }
+}
