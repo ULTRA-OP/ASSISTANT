@@ -1,24 +1,33 @@
 {
-  "name": "ULTRA X ASSISTANT",
-  "description": "Open-Source ASSISTANT Bot for Telegram.",
-  "keywords": ["Telegram", "Ultra x", "assistant"],
-  "repository": "https://github.com/ULTRA-OP/ULTRA-X",
-  "stack": "container",
-  "env": {
-    "TOKEN": {
-      "description": "A bot token from @BotFather",
-      "required": true
+    "name": "assistant",
+    "description": "Simple basic code for a telegram bot in Telethon.",
+    "logo": "",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "assistant"
+    ],
+    "repository": "https://github.com/ULTRA-OP/ASSISTANT",
+    "website": "t.me/ultraxchat",
+    "success_url": "https://t.me/ultraXoT",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "API_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "TOKEN": {
+            "description": "Bot token, get it from @BotFather.",
+            "value": ""
+        }
     },
-    "API_ID": {
-      "description": "App ID from my.telegram.org/apps",
-      "required": true
-    },
-    "API_HASH": {
-      "description": "App hash from my.telegram.org/apps",
-      "required": true
-    },
-    "SUDO_USERS": {
-      "description": "List of user IDs counted as admin everywhere (separated by space).",
-      "required": true
-    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
