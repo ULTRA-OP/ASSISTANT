@@ -1,17 +1,18 @@
 {
-    "name": "UltraX Assistant",
-    "description": "Jnl",
+    "name": "Assistant",
+    "description": "A bot that can upload medias to telegra.ph",
     "logo": "https://telegra.ph/file/bc9ed71c462c8cb8cc02c.jpg",
     "keywords": [
-        "Assitant",
+        "Telegra.ph",
+        "Madboy",
         "Telegram Bot",
-        "TeamUltraX"
+        "Alain"
     ],
     "website": "",
-    "repository": "https://github.com/ULTRA-OP/ASSISTANT/",
+    "repository": "https://github.com/ULTRA-OP/ULTRA-X/",
     "success_url": "https://telegram.dog/Alain_Champion",
     "env": {
-        "TOKEN": {
+        "TG_BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
@@ -19,7 +20,7 @@
             "description": "Your API Hash from my.telegram.org",
             "value": ""
         },
-        "API_ID": {
+        "APP_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
         }
