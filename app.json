@@ -8,7 +8,7 @@
         "TeamUltraX"
     ],
     "website": "",
-    "repository": "https://github.com/ULTRA-OP/ULTRA-X/",
+    "repository": "https://github.com/ULTRA-OP/ASSISTANT/",
     "success_url": "https://telegram.dog/Alain_Champion",
     "env": {
         "TOKEN": {
