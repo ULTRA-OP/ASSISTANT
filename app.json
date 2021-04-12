@@ -9,10 +9,10 @@
         "Alain"
     ],
     "website": "",
-    "repository": "https://github.com/ULTRA-OP/ULTRA-X/",
+    "repository": "https://github.com/ULTRA-OP/ASSISTANT/",
     "success_url": "https://telegram.dog/Alain_Champion",
     "env": {
-        "TG_BOT_TOKEN": {
+        "TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
@@ -20,7 +20,7 @@
             "description": "Your API Hash from my.telegram.org",
             "value": ""
         },
-        "APP_ID": {
+        "API_ID": {
             "description": "Your API ID from my.telegram.org",
             "value": ""
         }
