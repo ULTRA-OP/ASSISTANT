@@ -89,7 +89,7 @@ async def back(event):
 @bot.on(events.NewMessage(pattern="/rules|/RULES"))
 async def assistant (event):
   if event.chat_id == -1001427249400:
-     await bot.send_message(event.chat.id, "**Click below to check group rules**,buttons=hmm)
+     await bot.send_message(event.chat.id, "**Click below to check group rules**",buttons=hmm)
   else:
      await bot.send_message(event.chat.id, f"**Hello mate\nI am UltraX Assistant, Sorry to say that i only work in UltraX network.**", buttons=alain)
 
