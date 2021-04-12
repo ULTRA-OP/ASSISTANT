@@ -64,7 +64,7 @@ async def handler(event):
       await bot.send_message(event.chat.id, f"**Hello mate\nI am UltraX Assistant, Sorry to say that i only work in UltraX network.**", buttons=alain)
       
 
-@bot.on(events.NewMessage(pattern="/start|/START"))
+@bot.on(events.NewMessage(pattern="/start|/START|ULTRA"))
 async def assistant (event):
   if event.chat_id == -1001427249400:
     await bot.send_message(event.chat_id,"**Hello I am UltraX assitant.\nA simple group manager bot to manage UltraX network**", buttons=PERU)
