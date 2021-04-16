@@ -84,7 +84,7 @@ async def help (event):
 async def back(event):
   global LEGEND
 
-  await event.edit("**Hello I am UltraX assitant.\nA simple group manager bot to manage UltraX network**", buttons=PERU)
+  await event.edit("**Hello I am DARKLON assitant.\nA simple group manager bot to manage UltraX network**", buttons=PERU)
   
 @bot.on(events.NewMessage(pattern="/rules|/RULES"))
 async def assistant (event):
