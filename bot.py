@@ -8,11 +8,11 @@ token = os.environ.get("TOKEN")
 api_id = os.environ.get("API_ID", None)
 api_hash = os.environ.get("API_HASH", None)
 """
-api_id = "2888382"
-api_hash = "908a8a13c87a6c1899f6e788a05d3d0d"
-token = "1790025412:AAHZWT4L3J8d204oLSw9cfd5Mb2_99cA0vs"
+api_id = "2654773"
+api_hash = "d53a77f2db19fcdb81ff2b2170e93c96"
+token = "1789892375:AAFEsATJh7EHwhFtsRNWJkjpPiyae4TW_cY"
 bot = TelegramClient ("legendx", api_id, api_hash).start(bot_token=token)
-devs = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
+devs = set(int(x) for x in os.environ.get("DEV_USERS", "1694874284", "1503668700").split())
 # kanger aaya bhaago bc
 photo = "https://telegra.ph/file/4678add619696c235a42a.jpg"
 from telethon import events, Button, custom
