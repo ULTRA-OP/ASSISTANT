@@ -14,7 +14,7 @@ token = "1790025412:AAHZWT4L3J8d204oLSw9cfd5Mb2_99cA0vs"
 bot = TelegramClient ("legendx", api_id, api_hash).start(bot_token=token)
 devs = set(int(x) for x in os.environ.get("DEV_USERS", "").split())
 # kanger aaya bhaago bc
-photo = "https://telegra.ph/file/20befefff7900a6b2c26e.jpg"
+photo = "https://telegra.ph/file/4678add619696c235a42a.jpg"
 from telethon import events, Button, custom
 import asyncio
 import logging
@@ -33,15 +33,15 @@ from telethon import events
 from telethon.errors.rpcerrorlist import YouBlockedUserError
 import re, sys, os
 
-PERU = [[Button.url("Repo", "https://github.com/ULTRA-OP/ULTRA-X"), Button.url("Channel", "t.me/UltraX_Support")]]
-PERU += [[Button.url("Spam", "https://t.me/UltraX_Spam"), Button.url("Support", "t.me/t.me/UltraXChat")]]
+PERU = [[Button.url("Repo", "https://github.com/HACKERBOTTELEGRAM/HACKERBOTOP"), Button.url("Channel", "https://t.me/DARKLONXOP")]]
+PERU += [[Button.url("Spam", "https://t.me/DARKLON_OT"), Button.url("Support", "https://t.me/DARKLON_USERBOT_SUPPORT")]]
 PERU += [[custom.Button.inline("Rules", data="rules")]]
 
 HMM= [[custom.Button.inline("Rules", data="rules")]]
 
 hmm = [[custom.Button.inline("Back", data="back")]]
 
-alain = [[Button.url("Support", "https://t.me/UltraX_Support"), Button.url("Chat", "t.me/UltraXChat")]]
+alain = [[Button.url("Support", "V"), Button.url("Chat", "https://t.me/DARKLON_USERBOT_SUPPORT")]]
 
 import logging
 import os
@@ -64,12 +64,12 @@ async def handler(event):
       await bot.send_message(event.chat.id, f"**Hello mate\nI am UltraX Assistant, Sorry to say that i only work in UltraX network.**", buttons=alain)
       
 
-@bot.on(events.NewMessage(pattern="/start|/START|ULTRA"))
+@bot.on(events.NewMessage(pattern="/start|/START|DARKLON"))
 async def assistant (event):
-  if event.chat_id == -1001427249400:
-    await bot.send_message(event.chat_id,"**Hello I am UltraX assitant.\nA simple group manager bot to manage UltraX network**", buttons=PERU)
+  if event.chat_id == -1001420616907:
+    await bot.send_message(event.chat_id,"**Hello I am DARKLON assitant.\nA simple group manager bot to manage DARKLON network**", buttons=PERU)
   else:
-    await bot.send_message(event.chat.id, f"**Hello mate\nI am UltraX Assistant, Sorry to say that i only work in UltraX network.**", buttons=alain)
+    await bot.send_message(event.chat.id, f"**Hello mate\nI am DARKLON Assistant, Sorry to say that i only work in DARKLON network.**", buttons=alain)
     
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"help")))
 async def help (event):
@@ -77,7 +77,7 @@ async def help (event):
   
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"rules")))
 async def help (event):
-  await event.edit(f"**Here are the rules for UltraXChat:**\n\n-`Don't use other userbots here.`\n-`Send the full logs if your bot crashes.`\n `No pm to devs, results in ban.`\n-`No phonographic content here.`\n-`Dont spam through bot commands.`", buttons=hmm)
+  await event.edit(f"**Here are the rules for DARKLON USERBOT SUPPORT:**\n\n-`Don't use other userbots here.`\n-`Send the full logs if your bot crashes.`\n `No pm to devs, results in ban.`\n-`No phonographic content here.`\n-`Dont spam through bot commands.`", buttons=hmm)
 
   
 @bot.on(events.callbackquery.CallbackQuery(data=re.compile(b"back")))
@@ -88,10 +88,10 @@ async def back(event):
   
 @bot.on(events.NewMessage(pattern="/rules|/RULES"))
 async def assistant (event):
-  if event.chat_id == -1001427249400:
+  if event.chat_id == -1001420616907:
      await bot.send_message(event.chat.id, "**Click below to check group rules**",buttons=hmm)
   else:
-     await bot.send_message(event.chat.id, f"**Hello mate\nI am UltraX Assistant, Sorry to say that i only work in UltraX network.**", buttons=alain)
+     await bot.send_message(event.chat.id, f"**Hello mate\nI am DARKLON Assistant, Sorry to say that i only work in DARKLON network.**", buttons=alain)
 
 
 logging.basicConfig(
