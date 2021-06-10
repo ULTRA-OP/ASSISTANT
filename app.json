@@ -24,6 +24,10 @@
             "description": "Bot token, get it from @BotFather.",
             "value": ""
         }
-  },
-  "stack": "heroku-20"
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
